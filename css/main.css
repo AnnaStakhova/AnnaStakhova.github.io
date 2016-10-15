@@ -1,0 +1,140 @@
+/* for different sizes */
+@media (max-width: 768px) {
+    .row-footer .nav {
+        margin-left: 0px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .carousel, .my_photo {
+      max-width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+/* the entire document */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 170%;
+}
+/* navbar */
+button.navbar-toggle {
+  border-color: white !important;
+  border-radius: 100%;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #c65e89;
+  border-radius: 100%;
+}
+
+.icon-bar {
+  background-color: white !important;
+  width: 14px !important;
+}
+
+.navbar-anna {
+  font-family: 'Satisfy', cursive;
+  font-size: 28px;
+  color: #832231;
+  padding-right: 20px;
+}
+
+.navbar {
+  background-color: #eca1c2;
+  border: none;
+}
+
+.navbar a {
+  color: white !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.7rem;
+}
+/* about part */
+.about_header h1, .about_header h2{
+  text-align: center;
+  margin: 10px;
+}
+
+.about_image {
+  width: 100%;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.about_first {
+  margin-top: 40px;
+}
+/* footer */
+footer {
+  background-color: #6b9da8;
+}
+.row-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: #6b9da8;
+  padding-bottom: 50px;
+}
+
+.row-footer p {
+  color: #a1cad3;
+}
+
+.rights {
+  text-align: center;
+}
+
+.row-footer a{
+  color: white;
+}
+
+.row-footer a:hover, .row-footer a:focus{
+  color: white;
+}
+
+.row-footer .nav {
+  margin-right: 20px;
+}
+
+a.btn-default{
+  background-color: #de77a2;
+  border-color: #ba507c;
+}
+
+a.btn-default:hover, a.btn-default:focus {
+  background-color: #c65e89;
+  border-color: #ba507c;
+}
+
+.row-footer h1{
+  color: white;
+  font-size: 40px;
+  text-align: left;
+  margin: 20px 0 0 0;
+}
+
+.btn-sm {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  padding-top: 7px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 500%;
+  font-family: 'Satisfy', cursive;
+  margin: 50px auto;
+  color: #832231;
+}
+
+h2 {
+  color: #6b9da8;
+  font-weight: bold;
+  font-size: 150%;
+}
