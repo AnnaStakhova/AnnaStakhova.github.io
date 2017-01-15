@@ -143,6 +143,15 @@ div.hovereffect {
 	cursor: pointer; 
 }
 
+#ninja-slider .fs-icon {
+	height: initial !important;
+	border-radius: 5px !important;
+}
+
+#ninja-slider.fullscreen {
+	height: initial !important;
+}
+	
 #ninja-slider.fullscreen .fs-icon::before {
 	display: none!important;
 }
