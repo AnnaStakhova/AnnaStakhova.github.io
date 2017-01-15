@@ -71,13 +71,13 @@ button.navbar-toggle {
 }
 /* footer */
 footer {
-  background-color: #6b9da8;
+  background-color: #5f929d;
 }
 .row-footer {
   position: relative;
   bottom: 0;
   left: 0;
-  background-color: #6b9da8;
+  background-color: #5f929d;
   padding-bottom: 50px;
 }
 
@@ -129,12 +129,29 @@ h1 {
   text-align: center;
   font-size: 500%;
   font-family: 'Satisfy', cursive;
-  margin: 50px auto;
+  margin: 50px auto 0px;
   color: #832231;
 }
 
 h2 {
-  color: #6b9da8;
+  color: #5f929d;
   font-weight: bold;
   font-size: 150%;
+}
+
+div.hovereffect {
+	cursor: pointer; 
+}
+
+#ninja-slider.fullscreen .fs-icon::before {
+	display: none!important;
+}
+
+h2.proj_names {
+	padding: 15px;
+}
+.slider-inner a {
+	font-size: 14px; 
+	color: #ccc;
+	text-decoration: underline;
 }

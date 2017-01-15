@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta property='og:title' content="Anna Stakhova - web and graphic designer" />
-    <meta property='og:image' content="https://annastakhova.github.io/img/preview.jpg" />
-    <meta property='og:description' content="Portfolio website" />
-    <meta property='og:url' content="https://annastakhova.github.io" />
     <title>Anna Stakhova - web and graphic designer</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -18,6 +14,28 @@
     <link href="css/animation.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <!-- ninja-slider -->
+    <link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/ninja-slider.js" type="text/javascript"></script>
+    <script>
+        function lightbox(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
+            if (isFullscreen) {
+                var ninjaSldr = document.getElementById("ninja-slider");
+                ninjaSldr.parentNode.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -158,181 +176,474 @@
         </div><!--
         --><div class="col-xs-12 col-sm-10 about_text vcenter">
           <h2>Web Design</h2>
-          <p>I am a junior web designer. I can create websites and know how to make it running across devices using the state-of-art technologies. I always keep learning and try to be up to date with the web design trends.</p>
+          <p>I am a web designer. I can create websites and know how to make it running across devices using the state-of-art technologies. I always keep learning and try to be up to date with the web design trends.</p>
         </div>
       </div>
     </section>
+    
     <div class="row" id="work">
       <div class="col-xs-12">
         <h1>Work</h1>
       </div>
     </div>
-    <section class="container">
+
+    <div style="display:none;">
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                        <a class="ns-img" href="img/r1.jpg"></a>
+                        <div class="caption">
+                            <h3>RSPAMD Website</h3>
+                            <p><a href="https://rspamd.com/" target="_blank">Rspamd Website</a>. Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/r2.jpg"></a>
+                        <div class="caption">
+                            <h3>RSPAMD Website</h3>
+                            <p><a href="https://rspamd.com/" target="_blank">Rspamd Website</a>. Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/r3.jpg"></a>
+                        <div class="caption">
+                            <h3>RSPAMD Logo and corporate t-shirts</h3>
+                            <p>Rspamd logo: two arrows look like an envelope and also they represent a spam and non-spam division.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/r4.jpg"></a>
+                        <div class="caption">
+                            <h3>RSPAMD Web Interface</h3>
+                            <p>Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/d1.jpg"></a>
+                        <div class="caption">
+                            <h3>DENY Childrens Play Ground Area</h3>
+                            <p>Deny New Year project. Moscow 2014.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/d2.jpg"></a>
+                        <div class="caption">
+                            <h3>DENY promotional equipment</h3>
+                            <p>Deny New Year project. Moscow 2014.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/d22.jpg"></a>
+                        <div class="caption">
+                            <h3>DENY promotional equipment. Final photo</h3>
+                            <p>Deny New Year project. Moscow 2014.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/d3.jpg"></a>
+                        <div class="caption">
+                            <h3>DENY Childrens Play Ground Area. Final photo</h3>
+                            <p>Deny New Year project. Moscow 2014.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/d4.jpg"></a>
+                        <div class="caption">
+                            <h3>DENY promotional flyer</h3>
+                            <p>Deny New Year project. Moscow 2014.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o1.jpg"></a>
+                        <div class="caption">
+                            <h3>Flyer for Tauride Garden Orangery</h3>
+                            <p>Graphic design, printed materials.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o2.jpg"></a>
+                        <div class="caption">
+                            <h3>Nivea promotional sticker.</h3>
+                            <p>Graphic design</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o3.jpg"></a>
+                        <div class="caption">
+                            <h3>MTS key visual</h3>
+                            <p>Graphic design. Contest project.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o4.jpg"></a>
+                        <div class="caption">
+                            <h3>Certificate, Envelope and Business Cards for beauty saloon</h3>
+                            <p>Graphic design, printed materials.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o5.jpg"></a>
+                        <div class="caption">
+                            <h3>Salomon shopping mole map</h3>
+                            <p>Graphic design.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o6.jpg"></a>
+                        <div class="caption">
+                            <h3>Vernel key visual</h3>
+                            <p>Graphic design.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o7.jpg"></a>
+                        <div class="caption">
+                            <h3>Garnier promotional zone</h3>
+                            <p>3D simulation.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o8.jpg"></a>
+                        <div class="caption">
+                            <h3>My own portfolio website</h3>
+                            <p>Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o9.jpg"></a>
+                        <div class="caption">
+                            <h3>Sale cosmetic zone</h3>
+                            <p>3D simulation.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o10.jpg"></a>
+                        <div class="caption">
+                            <h3>Tatamiz Disney puzzle mats and packs</h3>
+                            <p>Graphic design.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o11.jpg"></a>
+                        <div class="caption">
+                            <h3>Sweet gift design logo </h3>
+                            <p>Graphic design, corporate style.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o12.jpg"></a>
+                        <div class="caption">
+                            <h3>Charity poster</h3>
+                            <p>Graphic design, corporate style.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o13.jpg"></a>
+                        <div class="caption">
+                            <h3>SVG corporate russian doll</h3>
+                            <p>Corporate style.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o14.jpg"></a>
+                        <div class="caption">
+                            <h3>Special little shop logo </h3>
+                            <p>Graphic design, corporate style.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o15.jpg"></a>
+                        <div class="caption">
+                            <h3>Leaflet</h3>
+                            <p>Graphic design, printed materials.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o16.jpg"></a>
+                        <div class="caption">
+                            <h3>Aqua aerobics flyer</h3>
+                            <p>Graphic design, printed materials.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o17.jpg"></a>
+                        <div class="caption">
+                            <h3>Lua Web Editor</h3>
+                            <p>Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o18.jpg"></a>
+                        <div class="caption">
+                            <h3>Schwarzkopf promotional stand</h3>
+                            <p>3D simulation.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o19.jpg"></a>
+                        <div class="caption">
+                            <h3>Mafia game leaflet</h3>
+                            <p>Graphic design, printed materials.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/o20.jpg"></a>
+                        <div class="caption">
+                            <h3>BoyScout catalog page</h3>
+                            <p>Graphic design, printed materials.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="fsBtn" class="fs-icon" title="Expand/Close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container gallery">
+		<div class="row">
+			<h2 class="proj_names">Rspamd project</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(0)">
+	              <img src="img/r1.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Rspamd Website</h3>
+	                <p class="info">Web design</p>
+	              </div>
+	          </div>
+	        </div>
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(1)">
+	              <img src="img/r2.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Rspamd Website</h3>
+	                <p class="info">Web design</p>
+	              </div>
+	          </div>
+	        </div>
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(2)">
+	              <img src="img/r3.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Logo and t-shirts</h3>
+	                <p class="info">Corporate style</p>
+	              </div>
+	          </div>
+	        </div>
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(3)">
+	              <img src="img/r4.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Web Interface</h3>
+	                <p class="info">Web design</p>
+	              </div>
+	          </div>
+	        </div>
+	    </div>
+    </section>
+    
+    <section class="container gallery">
+		<div class="row">
+			<h2 class="proj_names">Deny New Year project</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(4)">
+	              <img src="img/d1.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Childrens play area</h3>
+	                <p class="info">3D simulation, promotion</p>
+	              </div>
+	          </div>
+	        </div>
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(5)">
+	              <img src="img/d2.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Promotional equipment</h3>
+	                <p class="info">Graphic design, promotion</p>
+	              </div>
+	          </div>
+	        </div>
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(7)">
+	              <img src="img/d3.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Childrens play area</h3>
+	                <p class="info">Final photo</p>
+	              </div>
+	          </div>
+	        </div>
+			<div class="col-sm-3 col-xs-6">
+	          <div class="hovereffect"  onclick="lightbox(8)">
+	              <img src="img/d4.jpg" alt="work example">
+	              <div class="overlay">
+	                <h3>Promotional flyers</h3>
+	                <p class="info">Graphic design, promotion</p>
+	              </div>
+	          </div>
+   		 </div>
+   		 </div>
+    </section>
+
+
+    <section class="container gallery">
+      <div class="row">
+          <h2 class="proj_names">Other projects</h2>
+	  </div>
       <div class="row">
         <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect">
-              <img src="img/logo4.jpg" alt="work example">
+          <div class="hovereffect"  onclick="lightbox(9)">
+              <img src="img/o1.jpg" alt="work example">
               <div class="overlay">
-                <h3>LOGO</h3>
-                <p class="info">Corporate style</p>
+                <h3>Flyer</h3>
+                <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/vernel.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(10)">
+              <img src="img/o2.jpg" alt="work example">
               <div class="overlay">
-                <h3>vernel key visual</h3>
+                <h3>Promotional sticker</h3>
                 <p class="info">Graphic design</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/promo1.jpg" alt="work example">
-              <div class="overlay">
-                <h3>Sale cosmetic zone</h3>
-                <p class="info">3D simulation</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/poligr_01.jpg" alt="work example">
-              <div class="overlay">
-                <h3>flyer aqua aerobics</h3>
-                 <p class="info">Graphic design, printed materials</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/pack.jpg" alt="work example">
-              <div class="overlay">
-                <h3>tatamiz puzzle packs</h3>
-                <p class="info">Graphic design, packaging</p>
-              </div>
-          </div>
-          <!--div class="hovereffect">
-              <img src="img/poligr_05.jpg" alt="work example">
-              <div class="overlay">
-                <h3>Leaflet</h3>
-                <p class="info">Graphic design, printed materials</p>
-              </div>
-          </div-->
-        </div>
-
-        <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect">
-              <img src="img/roll-up.png" alt="work example">
-              <div class="overlay">
-                <h3>deny roll-up</h3>
-                <p class="info">Graphic design, promotion</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/rspamd_logo.png" alt="work example">
-              <div class="overlay">
-                <h3>LOGO</h3>
-                <p class="info">Corporate style</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/olmeca.jpg" alt="work example">
-              <div class="overlay">
-                <h3>Olmeca promo zone</h3>
-                <p class="info">3D simulation, promotion</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/charity.png" alt="work example">
-              <div class="overlay">
-                <h3>charity banner</h3>
-                <p class="info">Graphic design, corporate style</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/12.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(11)">
+              <img src="img/o3.jpg" alt="work example">
               <div class="overlay">
                 <h3>Key visual</h3>
                 <p class="info">Graphic design</p>
               </div>
           </div>
-        </div>
-
-        <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect">
-              <img src="img/rspamd.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(12)">
+              <img src="img/o4.jpg" alt="work example">
               <div class="overlay">
-                <h3>rspamd web site</h3>
-                <p class="info">Web design, corporate style</p>
+                <h3>Certificate and business cards</h3>
+                 <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/promo2.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(13)">
+              <img src="img/o5.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Shopping mall map</h3>
+                 <p class="info">Graphic design</p>
+              </div>
+          </div>
+        </div>        
+        
+        <div class="col-sm-3 col-xs-6">
+          <div class="hovereffect"  onclick="lightbox(14)">
+              <img src="img/o6.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Key visual</h3>
+                <p class="info">Graphic design</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(15)">
+              <img src="img/o7.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Promotional zone</h3>
+                <p class="info">3D simulation</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(16)">
+              <img src="img/o8.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Portfolio website</h3>
+                <p class="info">Web design</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(17)">
+              <img src="img/o9.jpg" alt="work example">
               <div class="overlay">
                 <h3>Sale cosmetic zone</h3>
                 <p class="info">3D simulation</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/logo1.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(18)">
+              <img src="img/o10.jpg" alt="work example">
               <div class="overlay">
-                <h3>LOGO</h3>
-                <p class="info">Corporate style</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/stoyka.jpg" alt="work example">
-              <div class="overlay">
-                <h3>garnier promo stand</h3>
-                <p class="info">Graphic design, 3D simulation</p>
-              </div>
-          </div>
-          <div class="hovereffect">
-              <img src="img/boyscout.jpg" alt="work example">
-              <div class="overlay">
-                <h3>christmas newsletter</h3>
-                <p class="info">Graphic design</p>
+                <h3>Puzzle mats and packs</h3>
+                <p class="info">Graphic desigh</p>
               </div>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect">
-              <img src="img/poligr_07.jpg" alt="work example">
+          <div class="hovereffect"  onclick="lightbox(19)">
+              <img src="img/o11.jpg" alt="work example">
               <div class="overlay">
-                <h3>flyer</h3>
+                <h3>LOGO</h3>
+                <p class="info">Corporate style</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(20)">
+              <img src="img/o12.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Charity poster</h3>
                 <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/t-shirts.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(21)">
+              <img src="img/o13.jpg" alt="work example">
               <div class="overlay">
-                <h3>Design t-shirt</h3>
-                <p class="info">Clothes design</p>
+                <h3>Russian doll</h3>
+                <p class="info">Corporate style</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/mafia.png" alt="work example">
+          <div class="hovereffect" onclick="lightbox(22)">
+              <img src="img/o14.jpg" alt="work example">
               <div class="overlay">
-                <h3>leaflet</h3>
+                <h3>LOGO</h3>
+                <p class="info">Corporate style</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(23)">
+              <img src="img/o15.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Leaflet</h3>
                  <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/promo3.jpg" alt="work example">
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="hovereffect"  onclick="lightbox(24)">
+              <img src="img/o16.jpg" alt="work example">
               <div class="overlay">
-                <h3>kids playground</h3>
+                <h3>Flyer</h3>
+                <p class="info">Graphic design, printed materials</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(25)">
+              <img src="img/o17.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Web editor</h3>
+                <p class="info">Web design</p>
+              </div>
+          </div>
+          <div class="hovereffect" onclick="lightbox(26)">
+              <img src="img/o18.jpg" alt="work example">
+              <div class="overlay">
+                <h3>Promotional stand</h3>
                 <p class="info">3D simulation</p>
               </div>
           </div>
-          <div class="hovereffect">
-              <img src="img/colgate.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(27)">
+              <img src="img/o19.jpg" alt="work example">
               <div class="overlay">
-                <h3>magazine page with mirrow</h3>
-                <p class="info">Graphic design</p>
+                <h3>Leaflet</h3>
+                 <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <!--div class="hovereffect">
-              <img src="img/poligr_03.jpg" alt="work example">
+          <div class="hovereffect" onclick="lightbox(28)">
+              <img src="img/o20.jpg" alt="work example">
               <div class="overlay">
-                <h3>certificate, envelope and cards</h3>
-                <p class="info">Corporate style</p>
+                <h3>Catalog page</h3>
+                 <p class="info">Graphic design, printed materials</p>
               </div>
-          </div-->
+          </div>
         </div>
       </div>
     </section>
@@ -370,6 +681,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </body>
 </html>
