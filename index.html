@@ -14,28 +14,6 @@
     <link href="css/animation.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-    <!-- ninja-slider -->
-    <link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
-    <script src="js/ninja-slider.js" type="text/javascript"></script>
-    <script>
-        function lightbox(idx) {
-            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
-            var ninjaSldr = document.getElementById("ninja-slider");
-            ninjaSldr.parentNode.style.display = "block";
-
-            nslider.init(idx);
-
-            var fsBtn = document.getElementById("fsBtn");
-            fsBtn.click();
-        }
-
-        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
-            if (isFullscreen) {
-                var ninjaSldr = document.getElementById("ninja-slider");
-                ninjaSldr.parentNode.style.display = "none";
-            }
-        }
-    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -187,218 +165,26 @@
       </div>
     </div>
 
-    <div style="display:none;">
-        <div id="ninja-slider">
-            <div class="slider-inner">
-                <ul>
-                    <li>
-                        <a class="ns-img" href="img/r1.jpg"></a>
-                        <div class="caption">
-                            <h3>RSPAMD Website</h3>
-                            <p><a href="https://rspamd.com/" target="_blank">Rspamd Website</a>. Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/r2.jpg"></a>
-                        <div class="caption">
-                            <h3>RSPAMD Website</h3>
-                            <p><a href="https://rspamd.com/" target="_blank">Rspamd Website</a>. Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/r3.jpg"></a>
-                        <div class="caption">
-                            <h3>RSPAMD Logo and corporate t-shirts</h3>
-                            <p>Rspamd logo: two arrows look like an envelope and also they represent a spam and non-spam division.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/r4.jpg"></a>
-                        <div class="caption">
-                            <h3>RSPAMD Web Interface</h3>
-                            <p>Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/d1.jpg"></a>
-                        <div class="caption">
-                            <h3>DENI Childrens Play Ground Area</h3>
-                            <p>Deni New Year project. Moscow 2014.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/d2.jpg"></a>
-                        <div class="caption">
-                            <h3>DENIY promotional equipment</h3>
-                            <p>Deni New Year project. Moscow 2014.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/d22.jpg"></a>
-                        <div class="caption">
-                            <h3>DENI promotional equipment. Final photo</h3>
-                            <p>Deni New Year project. Moscow 2014.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/d3.jpg"></a>
-                        <div class="caption">
-                            <h3>DENI Childrens Play Ground Area. Final photo</h3>
-                            <p>Deni New Year project. Moscow 2014.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/d4.jpg"></a>
-                        <div class="caption">
-                            <h3>DENI promotional flyer</h3>
-                            <p>Deni New Year project. Moscow 2014.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o1.jpg"></a>
-                        <div class="caption">
-                            <h3>Flyer for Tauride Garden Orangery</h3>
-                            <p>Graphic design, printed materials.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o2.jpg"></a>
-                        <div class="caption">
-                            <h3>Nivea promotional sticker.</h3>
-                            <p>Graphic design</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o3.jpg"></a>
-                        <div class="caption">
-                            <h3>MTS key visual</h3>
-                            <p>Graphic design. Contest project.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o4.jpg"></a>
-                        <div class="caption">
-                            <h3>Certificate, Envelope and Business Cards for beauty saloon</h3>
-                            <p>Graphic design, printed materials.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o5.jpg"></a>
-                        <div class="caption">
-                            <h3>Salomon shopping mole map</h3>
-                            <p>Graphic design.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o6.jpg"></a>
-                        <div class="caption">
-                            <h3>Vernel key visual</h3>
-                            <p>Graphic design.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o7.jpg"></a>
-                        <div class="caption">
-                            <h3>Garnier promotional zone</h3>
-                            <p>3D simulation.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o8.jpg"></a>
-                        <div class="caption">
-                            <h3>My own portfolio website</h3>
-                            <p>Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o9.jpg"></a>
-                        <div class="caption">
-                            <h3>Sale cosmetic zone</h3>
-                            <p>3D simulation.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o10.jpg"></a>
-                        <div class="caption">
-                            <h3>Tatamiz Disney puzzle mats and packs</h3>
-                            <p>Graphic design.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o11.jpg"></a>
-                        <div class="caption">
-                            <h3>Sweet gift design logo </h3>
-                            <p>Graphic design, corporate style.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o12.jpg"></a>
-                        <div class="caption">
-                            <h3>Charity poster</h3>
-                            <p>Graphic design, corporate style.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o13.jpg"></a>
-                        <div class="caption">
-                            <h3>SVG corporate russian doll</h3>
-                            <p>Corporate style.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o14.jpg"></a>
-                        <div class="caption">
-                            <h3>Special little shop logo </h3>
-                            <p>Graphic design, corporate style.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o15.jpg"></a>
-                        <div class="caption">
-                            <h3>Leaflet</h3>
-                            <p>Graphic design, printed materials.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o16.jpg"></a>
-                        <div class="caption">
-                            <h3>Aqua aerobics flyer</h3>
-                            <p>Graphic design, printed materials.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o17.jpg"></a>
-                        <div class="caption">
-                            <h3>Lua Web Editor</h3>
-                            <p>Web design. HTML5, CSS3, Bootstrap, JQuery.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o18.jpg"></a>
-                        <div class="caption">
-                            <h3>Schwarzkopf promotional stand</h3>
-                            <p>3D simulation.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o19.jpg"></a>
-                        <div class="caption">
-                            <h3>Mafia game leaflet</h3>
-                            <p>Graphic design, printed materials.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="ns-img" href="img/o20.jpg"></a>
-                        <div class="caption">
-                            <h3>BoyScout catalog page</h3>
-                            <p>Graphic design, printed materials.</p>
-                        </div>
-                    </li>
-                </ul>
-                <div id="fsBtn" class="fs-icon" title="Expand/Close"><i class="fa fa-times" aria-hidden="true"></i></div>
-            </div>
-        </div>
-    </div>
+	<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i><span class="sr-only">Close</span></button>
+	            </div>
+	            <div class="modal-body">
+	                <img id="image-gallery-image" class="img-responsive" src="">
+	                <button type="button" class="btn btn-primary" id="show-previous-image"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+	                <button type="button" id="show-next-image" class="btn btn-default"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+	            </div>
+	            <div class="modal-footer">
+	                <h4 class="modal-title" id="image-gallery-title"></h4>
+	                <div class="text-justify" id="image-gallery-caption">
+	                </div>
+	
+	            </div>
+	        </div>
+	    </div>
+	</div>
 
     <section class="container gallery">
 		<div class="row">
@@ -406,8 +192,8 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(0)">
-	              <img src="img/r1sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="RSPAMD Website" data-caption="Web design. HTML5, CSS3, Bootstrap, JQuery." data-image="img/r1.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/r1sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Rspamd Website</h3>
 	                <p class="info">Web design</p>
@@ -415,8 +201,8 @@
 	          </div>
 	        </div>
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(1)">
-	              <img src="img/r2sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="RSPAMD Website" data-caption="Web design. HTML5, CSS3, Bootstrap, JQuery." data-image="img/r2.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/r2sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Rspamd Website</h3>
 	                <p class="info">Web design</p>
@@ -424,8 +210,8 @@
 	          </div>
 	        </div>
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(2)">
-	              <img src="img/r3sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="RSPAMD Logo and corporate t-shirts" data-caption="Rspamd logo: two arrows look like an envelope and also they represent a spam and non-spam division." data-image="img/r3.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/r3sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Logo and t-shirts</h3>
 	                <p class="info">Corporate style</p>
@@ -433,8 +219,8 @@
 	          </div>
 	        </div>
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(3)">
-	              <img src="img/r4sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="RSPAMD Web Interface" data-caption="Web design. HTML5, CSS3, Bootstrap, JQuery." data-image="img/r4.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/r4sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Web Interface</h3>
 	                <p class="info">Web design</p>
@@ -450,8 +236,8 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(4)">
-	              <img src="img/d1sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="DENI Childrens Play Ground Area" data-caption="Deni New Year project. Moscow 2014." data-image="img/d1.jpg" data-target="#image-gallery">
+		          <img class="img-responsive" src="img/d1sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Childrens play area</h3>
 	                <p class="info">3D simulation, promotion</p>
@@ -459,8 +245,8 @@
 	          </div>
 	        </div>
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(5)">
-	              <img src="img/d2sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="DENI promotional equipment" data-caption="Deni New Year project. Moscow 2014." data-image="img/d2.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/d2sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Promotional equipment</h3>
 	                <p class="info">Graphic design, promotion</p>
@@ -468,8 +254,8 @@
 	          </div>
 	        </div>
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(7)">
-	              <img src="img/d3sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="DENI Childrens Play Ground Area. Final photo" data-caption="Deni New Year project. Moscow 2014." data-image="img/d3.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/d3sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Childrens play area</h3>
 	                <p class="info">Final photo</p>
@@ -477,8 +263,8 @@
 	          </div>
 	        </div>
 			<div class="col-sm-3 col-xs-6">
-	          <div class="hovereffect"  onclick="lightbox(8)">
-	              <img src="img/d4sm.jpg" alt="work example">
+	          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="DENI promotional flyer" data-caption="Deni New Year project. Moscow 2014." data-image="img/d4.jpg" data-target="#image-gallery">
+	              <img class="img-responsive" src="img/d4sm.jpg" alt="work example">
 	              <div class="overlay">
 	                <h3>Promotional flyers</h3>
 	                <p class="info">Graphic design, promotion</p>
@@ -488,43 +274,42 @@
    		 </div>
     </section>
 
-
     <section class="container gallery">
       <div class="row">
           <h2 class="proj_names">Other projects</h2>
 	  </div>
       <div class="row">
         <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect"  onclick="lightbox(9)">
-              <img src="img/o1sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Flyer for Tauride Garden Orangery" data-caption="Graphic design, printed materials." data-image="img/o1.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o1sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Flyer</h3>
                 <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(10)">
-              <img src="img/o2sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Nivea promotional sticker." data-caption="Graphic design." data-image="img/o2.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o2sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Promotional sticker</h3>
                 <p class="info">Graphic design</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(11)">
-              <img src="img/o3sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="MTS key visual" data-caption="Graphic design. Contest project." data-image="img/o3.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o3sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Key visual</h3>
                 <p class="info">Graphic design</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(12)">
-              <img src="img/o4sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Certificate, Envelope and Business Cards for beauty saloon." data-caption="Graphic design, printed materials." data-image="img/o4.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o4sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Certificate and business cards</h3>
                  <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(13)">
-              <img src="img/o5sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Salomon shopping mole map" data-caption="Graphic design." data-image="img/o5.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o5sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Shopping mall map</h3>
                  <p class="info">Graphic design</p>
@@ -533,36 +318,36 @@
         </div>        
         
         <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect"  onclick="lightbox(14)">
-              <img src="img/o6sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Vernel key visual" data-caption="Graphic design." data-image="img/o6.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o6sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Key visual</h3>
                 <p class="info">Graphic design</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(15)">
-              <img src="img/o7sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Garnier promotional zone" data-caption="3D simulation." data-image="img/o7.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o7sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Promotional zone</h3>
                 <p class="info">3D simulation</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(16)">
-              <img src="img/o8sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="My own portfolio website" data-caption="Web design. HTML5, CSS3, Bootstrap, JQuery." data-image="img/o8.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o8sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Portfolio website</h3>
                 <p class="info">Web design</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(17)">
-              <img src="img/o9sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Sale cosmetic zone" data-caption="3D simulation." data-image="img/o9.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o9sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Sale cosmetic zone</h3>
                 <p class="info">3D simulation</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(18)">
-              <img src="img/o10sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Tatamiz Disney puzzle mats and packs" data-caption="Graphic design." data-image="img/o10.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o10sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Puzzle mats and packs</h3>
                 <p class="info">Graphic desigh</p>
@@ -571,36 +356,36 @@
         </div>
 
         <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect"  onclick="lightbox(19)">
-              <img src="img/o11sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Sweet gift design logo" data-caption="Graphic design, corporate style." data-image="img/o11.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o11sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>LOGO</h3>
                 <p class="info">Corporate style</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(20)">
-              <img src="img/o12sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Charity poster" data-caption="Graphic design, corporate style." data-image="img/o12.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o12sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Charity poster</h3>
                 <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(21)">
-              <img src="img/o13sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="SVG corporate russian doll" data-caption="Corporate style." data-image="img/o13.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o13sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Russian doll</h3>
                 <p class="info">Corporate style</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(22)">
-              <img src="img/o14sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Special little shop logo" data-caption="Graphic design, corporate style." data-image="img/o14.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o14sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>LOGO</h3>
                 <p class="info">Corporate style</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(23)">
-              <img src="img/o15sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Leaflet" data-caption="Graphic design, printed materials." data-image="img/o15.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o15sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Leaflet</h3>
                  <p class="info">Graphic design, printed materials</p>
@@ -609,36 +394,36 @@
         </div>
 
         <div class="col-sm-3 col-xs-6">
-          <div class="hovereffect"  onclick="lightbox(24)">
-              <img src="img/o16sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Aqua aerobics flyer" data-caption="Graphic design, printed materials." data-image="img/o16.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o16sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Flyer</h3>
                 <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(25)">
-              <img src="img/o17sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Lua Web Editor" data-caption="Web design. HTML5, CSS3, Bootstrap, JQuery." data-image="img/o17.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o17sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Web editor</h3>
                 <p class="info">Web design</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(26)">
-              <img src="img/o18sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Schwarzkopf promotional stand" data-caption="3D simulation." data-image="img/o18.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o18sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Promotional stand</h3>
                 <p class="info">3D simulation</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(27)">
-              <img src="img/o19sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="Mafia game leaflet" data-caption="Graphic design, printed materials." data-image="img/o19.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o19sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Leaflet</h3>
                  <p class="info">Graphic design, printed materials</p>
               </div>
           </div>
-          <div class="hovereffect" onclick="lightbox(28)">
-              <img src="img/o20sm.jpg" alt="work example">
+          <div class="hovereffect" data-image-id="" data-toggle="modal" data-title="BoyScout catalog page" data-caption="Graphic design, printed materials." data-image="img/o20.jpg" data-target="#image-gallery">
+              <img class="img-responsive" src="img/o20sm.jpg" alt="work example">
               <div class="overlay">
                 <h3>Catalog page</h3>
                  <p class="info">Graphic design, printed materials</p>
@@ -676,11 +461,11 @@
         </div>
       </footer>
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </body>
 </html>
